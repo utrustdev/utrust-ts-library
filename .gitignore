@@ -1,0 +1,17 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# build
+/dist
+
+# misc
+.DS_Store
+.cache
+/tmp
+
+npm-debug.log*
