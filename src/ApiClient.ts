@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import { Order, Customer } from './types';
 
-export const SANDBOX_URL = 'http://merchants.utrust.lvh.me:4000/api';
+export const SANDBOX_URL = 'https://merchants.api.sandbox-utrust.com/api/';
 export const PRODUCTION_URL = 'https://merchants.api.utrust.com/api/';
 
 type Environment = 'sandbox' | 'production';
