@@ -10,7 +10,13 @@ The official Typescript library for the [Utrust API](https://docs.api.utrust.com
 ## Install
 
 ```
-npm install --save utrust-ts-library
+npm install @utrustdev/utrust-ts-library
+```
+
+or
+
+```
+yarn add @utrustdev/utrust-ts-library
 ```
 
 ## Usage
