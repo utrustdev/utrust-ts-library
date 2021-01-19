@@ -1,12 +1,12 @@
 {
   "name": "@utrustdev/utrust-ts-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utrust library for store integration",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "build": "tsc",
     "prepare": "npm run build",
