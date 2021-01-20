@@ -36,14 +36,14 @@ const ApiClient = (apiKey: string, environment: Environment = 'production') => {
           data: {
             data: {
               id: uuid,
-              attributes: { redirectUrl },
+              attributes: { redirect_url },
             },
           },
         }) => {
           return {
             status,
             data: {
-              redirectUrl,
+              redirectUrl: redirect_url,
               uuid,
             },
             errors: [],

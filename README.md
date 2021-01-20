@@ -26,7 +26,7 @@ yarn add @utrustdev/utrust-ts-library
 #### Creating a new Order:
 
 ```
-import {ApiClient} from 'utrust-ts-library';
+import {ApiClient} from '@utrustdev/utrust-ts-library';
 
 const {createOrder} = ApiClient(<API_KEY>, <ENVIRONMENT>)
 ```
@@ -48,7 +48,7 @@ Where you can get:
 #### Getting Order's Data
 
 ```
-import {ApiClient} from 'utrust-ts-library';
+import {ApiClient} from '@utrustdev/utrust-ts-library';
 
 const {getOrder} = ApiClient(<API_KEY>, <ENVIRONMENT>)
 ```
@@ -85,7 +85,7 @@ It simply returns:
 Example:
 
 ```
-import {WebhookValidator} from 'utrust-ts-library';
+import {WebhookValidator} from '@utrustdev/utrust-ts-library';
 
 const {validateSignature} = WebhookValidator(<WEBHOOK_SECRET>);
 

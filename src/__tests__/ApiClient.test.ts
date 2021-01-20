@@ -13,7 +13,7 @@ const createOrderResponse = {
     data: {
       id: '581d498a-9d19-4cd1-8a8d-7285c9a63613',
       attributes: {
-        redirectUrl: 'http://pay.sandbox-utrust.com?uuid=3c7131df-c370-4687-8f61-2a33957ac300',
+        redirect_url: 'http://pay.sandbox-utrust.com?uuid=3c7131df-c370-4687-8f61-2a33957ac300',
       },
     },
   },
@@ -63,7 +63,7 @@ describe('createOrder', () => {
     const result = await createOrderPromise;
 
     expect(result?.status).toEqual(201);
-    expect(result?.data?.redirectUrl).toEqual(createOrderResponse.data.data.attributes.redirectUrl);
+    expect(result?.data?.redirectUrl).toEqual(createOrderResponse.data.data.attributes.redirect_url);
     expect(result?.data?.uuid).toEqual(createOrderResponse.data.data.id);
   });
 });
