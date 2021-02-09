@@ -1,7 +1,7 @@
 import mockAxios from 'jest-mock-axios';
 
 import { ApiClient } from '../index';
-import { Currency, Country } from '../types';
+import { Customer, Order } from '../types';
 
 afterEach(() => {
   mockAxios.reset();
@@ -22,11 +22,11 @@ const createOrderResponse = {
 describe('createOrder', () => {
   test('Creates an order successfully and returns redirect url', async () => {
     const { createOrder } = ApiClient('u_test_api_8ebfc651-bdb9-4e90-b24d-d3834b8af2e5', 'sandbox');
-    const order = {
+    const order: Order = {
       reference: 'order-51367',
       amount: {
         total: '10.00',
-        currency: <Currency>'EUR',
+        currency: 'EUR',
       },
       return_urls: {
         return_url: 'http://example.com/success',
@@ -36,12 +36,12 @@ describe('createOrder', () => {
           sku: 'item-unique-id',
           name: 'Donation',
           price: '10.00',
-          currency: <Currency>'EUR',
+          currency: 'EUR',
           quantity: 1,
         },
       ],
     };
-    const customer = {
+    const customer: Customer = {
       first_name: 'John',
       last_name: 'Doe',
       email: 'email@email.com',
@@ -50,7 +50,7 @@ describe('createOrder', () => {
       city: 'New York',
       state: 'New York',
       postcode: '10001',
-      country: <Country>'US',
+      country: 'US',
     };
 
     const createOrderPromise = createOrder(order, customer);
