@@ -16,7 +16,7 @@ const WebhookValidator = (webhookSecret: string) => {
       `resourcecurrency${currency}`,
       `resourcereference${reference}`,
       `state${state}`,
-    ].join();
+    ].join('');
     const signedPayload = hmacSHA256(joinedPayload, webhookSecret);
     const signature = hex.stringify(signedPayload);
 
