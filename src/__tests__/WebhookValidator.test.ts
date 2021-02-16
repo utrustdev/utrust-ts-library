@@ -8,7 +8,7 @@ const webhookPayload = {
     amount: '10.90',
     currency: <Currency>'EUR',
   },
-  signature: '2a4935bffee9338d1b32f4a3474e0eff285bad03141422bb78c5131af6b45870',
+  signature: 'da5d46662744c63f3f22fc1f35243189d46c4721a7d4f7d4ee8216cf809bf16a',
   state: <EventState>'completed',
 };
 
