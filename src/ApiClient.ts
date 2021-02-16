@@ -51,9 +51,9 @@ const ApiClient = (apiKey: string, environment: Environment = 'production') => {
         },
       )
       .catch((error) => ({
-        status: error?.reponse?.status,
+        status: error?.response?.status,
         data: null,
-        errors: error.response || error.request || error.message,
+        errors: error?.response?.data?.errors,
       }));
 
   const getOrder = (uuid: string) =>
@@ -70,9 +70,9 @@ const ApiClient = (apiKey: string, environment: Environment = 'production') => {
         },
       )
       .catch((error) => ({
-        status: error?.reponse?.status,
+        status: error?.response?.status,
         data: null,
-        errors: error.response || error.request || error.message,
+        errors: error?.response?.data?.errors,
       }));
 
   return { createOrder, getOrder };
