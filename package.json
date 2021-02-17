@@ -1,6 +1,6 @@
 {
   "name": "@utrustdev/utrust-ts-library",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Utrust library for store integration",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
