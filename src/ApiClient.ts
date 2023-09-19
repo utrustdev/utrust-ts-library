@@ -2,8 +2,8 @@ import axios from 'axios';
 
 import { Order, Customer } from './types';
 
-export const SANDBOX_URL = 'https://merchants.api.sandbox-utrust.com/api/';
-export const PRODUCTION_URL = 'https://merchants.api.utrust.com/api/';
+export const SANDBOX_URL = 'https://merchants.api.sandbox.crypto.xmoney.com/api/';
+export const PRODUCTION_URL = 'https://merchants.api.crypto.xmoney.com/api/';
 
 type Environment = 'sandbox' | 'production';
 
