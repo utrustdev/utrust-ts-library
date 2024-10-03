@@ -1,6 +1,6 @@
-# Utrust typescript library
+# xMoney Crypto typescript library
 
-The official Typescript library for the [Utrust API](https://docs.api.utrust.com).
+The official Typescript library for the [xMoney Crypto API](https://docs.crypto.xmoney.com/).
 
 ## Minimum Requirements
 
@@ -126,8 +126,8 @@ npm run lint
 
 ## License
 
-Utrust utrust-ts-library is maintained with :purple_heart: by the Utrust development team,
+xMoney Crypto utrust-ts-library is maintained with :purple_heart: by the xMoney development team,
 and is available to the public under the GNU GPLv3 license.
 Please see [LICENSE](https://github.com/utrustdev/utrust-ts-library/blob/master/LICENSE) for further details.
 
-&copy; Utrust 2021
+&copy; Utrust 2024
